@@ -17,6 +17,6 @@ app.set('view engine', 'ejs');
 app.use(bodyp.urlencoded({extended: true}));
 app.use(express.static(path.join(__dirname, "public")));
 
-app.listen(process.env.POR || 3002, ()=>{
+app.listen(process.env.PORT || 3002, ()=>{
   console.log("page is running on port 3002")
 });
